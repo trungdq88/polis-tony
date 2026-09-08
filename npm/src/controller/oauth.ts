@@ -945,6 +945,51 @@ export class OAuthController implements IOAuthController {
       throw err;
     }
 
+    // If the OIDC provider returned an error, forward it to the redirect_uri
+    // without attempting discovery or token exchange
+    if (callbackParams.error) {
+      const { error, error_description } = callbackParams;
+      const error_message = error_description || 'Authorization failed at the OIDC provider';
+      this.opts.logger.error(`OIDCResponse error from provider: ${error_message}`);
+      metrics.increment(protocol === 'oidc' ? 'oauthResponseError' : 'idfedResponseError', {
+        protocol,
+        login_type,
+      });
+      const traceId = await this.ssoTraces.saveTrace({
+        error: error_message,
+        context: {
+          tenant: oidcConnection!.tenant,
+          product: oidcConnection!.product,
+          clientID: oidcConnection!.clientID,
+          providerName: oidcConnection!.oidcProvider?.provider,
+          redirectUri: redirect_uri,
+          relayState: RelayState,
+          isSAMLFederated,
+          isOIDCFederated,
+          acsUrl: session.requested.acsUrl,
+          entityId: session.requested.entityId,
+          requestedOIDCFlow: !!session.requested.oidc,
+          oidcIdPRequest: session?.requested?.oidcIdPRequest,
+          error,
+          error_description,
+        },
+      });
+
+      if (isSAMLFederated) {
+        throw new JacksonError(error_message, 403);
+      }
+
+      return {
+        redirect_url: OAuthErrorResponse({
+          error: (error as OAuthErrorHandlerParams['error']) || 'server_error',
+          error_description: traceId ? `${traceId}: ${error_message}` : error_message,
+          redirect_uri: redirect_uri!,
+          state: session.state,
+        }),
+        error: `${error} - ${error_message}`,
+      };
+    }
+
     // Reconstruct the oidcClient, code exchange for token and user profile happens here
     const { discoveryUrl, metadata, clientId, clientSecret } = oidcConnection.oidcProvider;
     const { ssoTraces } = this;
