@@ -1,5 +1,5 @@
 import { expect, type APIRequestContext } from '@playwright/test';
-import type { Directory } from '@boxyhq/saml-jackson';
+import type { Directory } from '@trungdq88/saml-jackson';
 import users from '../../../npm/test/dsync/data/users';
 import { scimOpUrl } from './utils';
 

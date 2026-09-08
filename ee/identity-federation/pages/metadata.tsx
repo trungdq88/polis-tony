@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
-import type { IdentityFederationAppWithMetadata } from '@boxyhq/saml-jackson';
+import type { IdentityFederationAppWithMetadata } from '@trungdq88/saml-jackson';
 import { Toaster } from '@components/Toaster';
 import { InputWithCopyButton, CopyToClipboardButton, LinkOutline } from '@boxyhq/internal-ui';
 import LicenseRequired from '@components/LicenseRequired';

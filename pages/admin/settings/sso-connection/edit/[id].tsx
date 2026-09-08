@@ -7,7 +7,7 @@ import EditConnection from '@components/connection/EditConnection';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Loading } from '@boxyhq/internal-ui';
 import { errorToast } from '@components/Toaster';
-import type { OIDCSSORecord, SAMLSSORecord } from '@boxyhq/saml-jackson';
+import type { OIDCSSORecord, SAMLSSORecord } from '@trungdq88/saml-jackson';
 
 const EditSSOConnection: NextPage = () => {
   const router = useRouter();

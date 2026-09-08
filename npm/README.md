@@ -6,10 +6,10 @@ Polis implements the SAML login flow as an OAuth 2.0 flow, abstracting away all 
 
 ## Install as an npm library
 
-Polis is available as an [npm package](https://www.npmjs.com/package/@boxyhq/saml-jackson) that can be integrated into any web application framework (like Express.js for example). Please file an issue or submit a PR if you encounter any issues with your choice of framework.
+Polis is available as an [npm package](https://www.npmjs.com/package/@trungdq88/saml-jackson) that can be integrated into any web application framework (like Express.js for example). Please file an issue or submit a PR if you encounter any issues with your choice of framework.
 
 ```bash
-npm install @boxyhq/saml-jackson
+npm install @trungdq88/saml-jackson
 ```
 
 ## Documentation

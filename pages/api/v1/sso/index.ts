@@ -1,7 +1,7 @@
 import jackson from '@lib/jackson';
 import { oidcMetadataParse, strategyChecker } from '@lib/utils';
 import { NextApiRequest, NextApiResponse } from 'next';
-import type { DelConnectionsQuery } from '@boxyhq/saml-jackson';
+import type { DelConnectionsQuery } from '@trungdq88/saml-jackson';
 import { validateDevelopmentModeLimits } from '@lib/development-mode';
 import { defaultHandler } from '@lib/api';
 import { normalizeBooleanParam } from '@lib/api/utils';

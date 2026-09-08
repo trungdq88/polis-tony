@@ -1,5 +1,5 @@
 import { expect, type APIRequestContext } from '@playwright/test';
-import type { Directory, Group } from '@boxyhq/saml-jackson';
+import type { Directory, Group } from '@trungdq88/saml-jackson';
 import { scimOpUrl } from './utils';
 
 export const createGroup = async (request: APIRequestContext, directory: Directory, group: any) => {

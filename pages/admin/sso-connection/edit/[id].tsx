@@ -6,7 +6,7 @@ import { fetcher } from '@lib/ui/utils';
 import EditConnection from '@components/connection/EditConnection';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Loading } from '@boxyhq/internal-ui';
-import { OIDCSSORecord, SAMLSSORecord } from '@boxyhq/saml-jackson';
+import { OIDCSSORecord, SAMLSSORecord } from '@trungdq88/saml-jackson';
 import { errorToast } from '@components/Toaster';
 
 const ConnectionEditPage: NextPage = () => {

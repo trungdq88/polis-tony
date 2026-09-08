@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { notFound } from 'next/navigation';
 import { useTranslation } from 'next-i18next';
-import type { SetupLinkService } from '@boxyhq/saml-jackson';
+import type { SetupLinkService } from '@trungdq88/saml-jackson';
 import { LinkBack, NewSetupLink } from '@boxyhq/internal-ui';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import type { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next';

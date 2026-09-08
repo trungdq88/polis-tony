@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import type { SetupLinkService } from '@boxyhq/saml-jackson';
+import type { SetupLinkService } from '@trungdq88/saml-jackson';
 import jackson from '@lib/jackson';
 import { defaultHandler } from '@lib/api';
 import { normalizeBooleanParam } from '@lib/api/utils';

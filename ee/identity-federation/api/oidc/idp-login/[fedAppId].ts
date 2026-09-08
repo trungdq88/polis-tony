@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 
 import jackson from '@lib/jackson';
-import { OIDCIdPInitiatedReq } from '@boxyhq/saml-jackson';
+import { OIDCIdPInitiatedReq } from '@trungdq88/saml-jackson';
 import { setErrorCookieAndRedirect } from '@lib/utils';
 import { logger } from '@lib/logger';
 

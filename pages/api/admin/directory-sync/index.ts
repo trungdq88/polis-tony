@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import type { DirectoryType } from '@boxyhq/saml-jackson';
+import type { DirectoryType } from '@trungdq88/saml-jackson';
 import jackson from '@lib/jackson';
 import { defaultHandler } from '@lib/api';
 import { ApiError } from '@lib/error';
