@@ -1,6 +1,6 @@
 {
   "name": "polis",
-  "version": "1.52.2",
+  "version": "1.52.2-patch1",
   "private": true,
   "description": "SAML 2.0 service",
   "keywords": [
@@ -62,10 +62,10 @@
     "@boxyhq/internal-ui": "file:internal-ui",
     "@boxyhq/metrics": "0.2.10",
     "@boxyhq/react-ui": "3.4.1",
-    "@trungdq88/saml-jackson": "file:npm",
     "@heroicons/react": "2.2.0",
     "@next/bundle-analyzer": "15.3.3",
     "@tailwindcss/typography": "0.5.16",
+    "@trungdq88/saml-jackson": "file:npm",
     "axios": "1.9.0",
     "chroma-js": "3.1.2",
     "classnames": "2.5.1",
