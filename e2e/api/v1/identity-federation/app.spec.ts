@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { IdentityFederationApp } from '@boxyhq/saml-jackson';
+import { IdentityFederationApp } from '@trungdq88/saml-jackson';
 import { options } from '../../helpers/api';
 
 test.use(options);

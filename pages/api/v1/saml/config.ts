@@ -2,7 +2,7 @@
 
 import jackson from '@lib/jackson';
 import { NextApiRequest, NextApiResponse } from 'next';
-import type { DelConnectionsQuery, GetConfigQuery } from '@boxyhq/saml-jackson';
+import type { DelConnectionsQuery, GetConfigQuery } from '@trungdq88/saml-jackson';
 import { logger } from '@lib/logger';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {

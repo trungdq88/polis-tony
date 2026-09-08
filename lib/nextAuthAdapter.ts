@@ -1,4 +1,4 @@
-import { Storable } from '@boxyhq/saml-jackson';
+import { Storable } from '@trungdq88/saml-jackson';
 import DB from 'npm/src/db/db';
 import { jacksonOptions } from './env';
 import type { AdapterUser, VerificationToken } from 'next-auth/adapters';

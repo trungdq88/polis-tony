@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import { notFound } from 'next/navigation';
 import { useTranslation } from 'next-i18next';
 import { SetupLinks } from '@boxyhq/internal-ui';
-import type { SetupLinkService } from '@boxyhq/saml-jackson';
+import type { SetupLinkService } from '@trungdq88/saml-jackson';
 import type { GetServerSidePropsContext, NextPage } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 

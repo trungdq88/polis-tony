@@ -1,4 +1,4 @@
-import type { Directory } from '@boxyhq/saml-jackson';
+import type { Directory } from '@trungdq88/saml-jackson';
 
 export function scimOpUrl(directory: Directory, opPath: string) {
   let endpoint = `${directory.scim.endpoint}/${opPath}`;

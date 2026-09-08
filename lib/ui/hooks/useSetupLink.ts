@@ -1,5 +1,5 @@
 import useSWR from 'swr';
-import type { AdminPortalBranding, SetupLink } from '@boxyhq/saml-jackson';
+import type { AdminPortalBranding, SetupLink } from '@trungdq88/saml-jackson';
 import type { ApiError, ApiSuccess } from 'types';
 import { fetcher } from '@lib/ui/utils';
 

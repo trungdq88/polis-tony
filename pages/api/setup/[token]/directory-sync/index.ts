@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import type { SetupLink } from '@boxyhq/saml-jackson';
+import type { SetupLink } from '@trungdq88/saml-jackson';
 import jackson from '@lib/jackson';
 import { validateDevelopmentModeLimits } from '@lib/development-mode';
 

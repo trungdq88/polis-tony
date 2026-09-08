@@ -1,6 +1,6 @@
-import type { SAMLJackson } from '@boxyhq/saml-jackson';
+import type { SAMLJackson } from '@trungdq88/saml-jackson';
 
-import jackson from '@boxyhq/saml-jackson';
+import jackson from '@trungdq88/saml-jackson';
 import { jacksonOptions } from '@lib/env';
 import '@lib/metrics';
 import { logger } from './logger';

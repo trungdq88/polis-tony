@@ -4,7 +4,7 @@ import type {
   DatabaseType,
   JacksonOption,
   SSOTracesOption,
-} from '@boxyhq/saml-jackson';
+} from '@trungdq88/saml-jackson';
 
 const samlPath = '/api/oauth/saml';
 const oidcPath = '/api/oauth/oidc';
